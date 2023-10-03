@@ -6,7 +6,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-const SERVER_URL = 'http://localhost:3000';  
+const SERVER_URL = 'http://host.docker.internal:3000';  
 
 function searchById(id) {
     axios.get(`${SERVER_URL}/projects/${id}`)
