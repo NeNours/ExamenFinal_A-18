@@ -1,0 +1,16 @@
+on va construire l'image Docker pour notre service DEV:
+docker build -t monservice-dev .(le . est important pour la creation)
+
+Exécutez le container:
+docker run -it --name examen_a-18 -p 3001:3000 monservice-dev
+
+vue que c'est une application de type console, un affichage sur une page web n'est pas possible
+
+on va construire une nouvelle image Docker pour notre service en mode PROD :
+docker build -t monservice-prod .(^^)
+
+Exécutez le container sur un port différent :
+docker run -it -p 4000:3000 monservice-prod (ici on vas omettre le nom pour voir qu'il va en generer un pour nous)
+
+voir si les container sont bien en marche:
+docker ps 
