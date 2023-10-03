@@ -10,7 +10,7 @@ on va construire une nouvelle image Docker pour notre service en mode PROD :
 docker build -t monservice-prod .(^^)
 
 Exécutez le container sur un port différent :
-docker run -it -p 4000:3000 monservice-prod (ici on vas omettre le nom pour voir qu'il va en generer un pour nous)
+docker run -it -p 4001:4000 monservice-prod (ici on vas omettre le nom pour voir qu'il va en generer un pour nous)
 
 voir si les container sont bien en marche:
 docker ps 
